@@ -1,0 +1,99 @@
+<section class="contact section" id="contact">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-subtitle">GET IN TOUCH</span>
+      <h2 class="section-title">Let's Work Together</h2>
+      <p class="section-description">
+        I'm currently open to Frontend Developer opportunities, freelance projects, and
+        collaborations. Feel free to reach out!
+      </p>
+    </div>
+
+    <div class="contact-wrapper">
+      <!-- Left -->
+      <div class="contact-info">
+        <div class="info-card available-card">
+          <h4>Available For</h4>
+
+          <div class="available-list">
+            <p>
+              Open to <strong>Frontend Developer</strong> roles,
+              <strong>Angular Development</strong>, and <strong>Freelance Projects</strong>.
+            </p>
+          </div>
+        </div>
+        <div class="info-card">
+          <i class="fa-solid fa-envelope"></i>
+          <div>
+            <h4>Email</h4>
+            <a href="mailto:madhurimanu2022@gmail.com">madhurimanu2022@gmail.com</a>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <i class="fa-solid fa-phone"></i>
+          <div>
+            <h4>Phone</h4>
+            <a href="tel:+918186816063">+91 8186816063</a>
+          </div>
+        </div>
+
+        <div class="info-card">
+          <i class="fa-solid fa-location-dot"></i>
+          <div>
+            <h4>Location</h4>
+            <p>Hyderabad, India</p>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <a href="#" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+
+          <a href="https://github.com/madhuri-frontend" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right -->
+      <div class="contact-form">
+        <form (ngSubmit)="sendEmail()">
+          <div class="input-group">
+            <input type="text" placeholder="Your Name" name="name" [(ngModel)]="name" />
+            <input type="email" placeholder="Email Address" name="email" [(ngModel)]="email" />
+          </div>
+
+          <input
+            type="text"
+            placeholder="Subject"
+            class="full-width"
+            name="subject"
+            [(ngModel)]="subject"
+          />
+
+          <textarea
+            rows="4"
+            placeholder="Write your message..."
+            class="full-width"
+            name="message"
+            [(ngModel)]="message"
+          ></textarea>
+
+          <button type="submit" class="btn-primary" [disabled]="loading">
+            <i class="fa-solid fa-paper-plane"></i>
+            {{ loading ? 'Sending...' : 'Send Message' }}
+          </button>
+        </form>
+        <div class="contact-note">
+          <h4>Let's Work Together!</h4>
+          <p>
+            Whether you're looking for a Frontend Developer, have a project idea, or would like to
+            collaborate, I'd be happy to hear from you.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
