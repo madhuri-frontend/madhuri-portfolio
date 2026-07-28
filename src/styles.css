@@ -100,3 +100,57 @@ h5 {
 p {
   color: var(--text-secondary);
 }
+
+/* ================================
+   Responsive Global Styles
+================================ */
+
+/* Tablets */
+@media (max-width: 992px) {
+  :root {
+    --section-padding: 80px;
+  }
+
+  .container {
+    width: min(92%, var(--container-width));
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  :root {
+    --section-padding: 70px;
+  }
+
+  .container {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  :root {
+    --section-padding: 60px;
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+}
