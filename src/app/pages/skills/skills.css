@@ -36,7 +36,7 @@
 }
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 30px;
 }
 .skill-card {
@@ -154,4 +154,164 @@
 
 .skill-card:hover::before {
   transform: scaleX(1);
+}
+/* ===================================
+   TABLET
+=================================== */
+
+@media (max-width: 992px) {
+  .skills {
+    padding: 80px 0;
+  }
+
+  .section-heading {
+    margin-bottom: 50px;
+  }
+
+  .section-heading h2 {
+    font-size: 2.3rem;
+  }
+
+  .section-heading p {
+    font-size: 1rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .skill-card {
+    padding: 28px;
+    min-height: 260px;
+  }
+}
+
+/* ===================================
+   MOBILE
+=================================== */
+
+@media (max-width: 768px) {
+  .skills {
+    padding: 70px 0;
+  }
+
+  .section-heading {
+    margin-bottom: 40px;
+  }
+
+  .section-heading h2 {
+    font-size: 2rem;
+  }
+
+  .section-heading p {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .skill-card {
+    min-height: auto;
+    padding: 24px;
+  }
+
+  .skill-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 16px;
+    margin-bottom: 18px;
+  }
+
+  .skill-icon i {
+    font-size: 26px;
+  }
+
+  .skill-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 14px;
+  }
+
+  .skill-desc {
+    font-size: 0.9rem;
+    margin-bottom: 16px;
+  }
+
+  .skill-tags {
+    gap: 8px;
+  }
+
+  .skill-tags span {
+    font-size: 0.8rem;
+    padding: 8px 12px;
+  }
+}
+
+/* ===================================
+   SMALL MOBILE
+=================================== */
+
+@media (max-width: 480px) {
+  .skills {
+    padding: 60px 0;
+  }
+
+  .section-heading {
+    margin-bottom: 35px;
+  }
+
+  .section-subtitle {
+    font-size: 12px;
+    letter-spacing: 3px;
+  }
+
+  .section-heading h2 {
+    font-size: 1.9rem;
+  }
+
+  .section-heading p {
+    font-size: 0.9rem;
+  }
+
+  .skills-grid {
+    gap: 16px;
+  }
+
+  .skill-card {
+    padding: 20px;
+    border-radius: 16px;
+  }
+
+  .skill-icon {
+    width: 54px;
+    height: 54px;
+    border-radius: 14px;
+    margin-bottom: 16px;
+  }
+
+  .skill-icon i {
+    font-size: 22px;
+  }
+
+  .skill-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 12px;
+  }
+
+  .skill-desc {
+    font-size: 0.85rem;
+    margin-bottom: 14px;
+  }
+
+  .skill-tags {
+    gap: 6px;
+  }
+
+  .skill-tags span {
+    font-size: 0.75rem;
+    padding: 6px 10px;
+  }
 }

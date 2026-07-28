@@ -125,3 +125,202 @@
   color: #fff;
   transform: translateY(-3px);
 }
+/* ============================
+   TABLET
+============================ */
+
+@media (max-width: 992px) {
+  .experience {
+    padding: 80px 0;
+  }
+
+  .experience-stats {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin: 40px 0;
+  }
+
+  .stat-card {
+    padding: 24px 18px;
+  }
+
+  .stat-card h3 {
+    font-size: 2rem;
+  }
+
+  .experience-card {
+    padding: 28px;
+  }
+
+  .experience-header h3 {
+    font-size: 1.6rem;
+  }
+}
+
+/* ============================
+   MOBILE
+============================ */
+
+@media (max-width: 768px) {
+  .experience {
+    padding: 70px 0;
+  }
+
+  .experience-container {
+    gap: 24px;
+  }
+
+  .experience-stats {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin: 35px 0;
+  }
+
+  .stat-card {
+    padding: 18px 12px;
+  }
+
+  .stat-card h3 {
+    font-size: 2rem;
+    margin-bottom: 8px;
+  }
+
+  .stat-card p {
+    font-size: 0.9rem;
+  }
+
+  .experience-card {
+    padding: 22px;
+  }
+
+  .experience-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 18px;
+  }
+
+  .experience-header h3 {
+    font-size: 1.5rem;
+    line-height: 1.3;
+  }
+
+  .experience-header h4 {
+    font-size: 1rem;
+    margin-top: 6px;
+  }
+
+  .experience-duration {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+  }
+
+  .experience-description {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
+  .experience-category h5 {
+    font-size: 1.05rem;
+  }
+
+  .experience-points li {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    padding-left: 24px;
+  }
+
+  .tech-stack {
+    gap: 8px;
+  }
+
+  .tech-stack span {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+}
+
+/* ============================
+   SMALL MOBILE
+============================ */
+
+@media (max-width: 480px) {
+  .experience {
+    padding: 60px 0;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .experience-stats {
+    gap: 10px;
+  }
+
+  .stat-card {
+    padding: 16px 10px;
+    border-radius: 14px;
+  }
+
+  .stat-card h3 {
+    font-size: 1.9rem;
+  }
+
+  .stat-card p {
+    font-size: 0.8rem;
+    line-height: 1.5;
+  }
+
+  .experience-card {
+    padding: 18px;
+    border-radius: 16px;
+  }
+
+  .experience-header {
+    gap: 10px;
+  }
+
+  .experience-header h3 {
+    font-size: 1.3rem;
+    line-height: 1.4;
+  }
+
+  .experience-header h3 i {
+    font-size: 1.1rem;
+  }
+
+  .experience-header h4 {
+    font-size: 0.95rem;
+  }
+
+  .experience-duration {
+    font-size: 0.85rem;
+  }
+
+  .experience-description {
+    font-size: 0.9rem;
+  }
+
+  .experience-category h5 {
+    font-size: 1rem;
+  }
+
+  .experience-points li {
+    font-size: 0.88rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+
+  .experience-divider {
+    margin: 18px 0;
+  }
+
+  .tech-stack {
+    gap: 8px;
+  }
+
+  .tech-stack span {
+    font-size: 0.75rem;
+    padding: 6px 10px;
+  }
+}

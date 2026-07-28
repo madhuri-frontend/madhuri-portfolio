@@ -172,7 +172,7 @@ textarea {
 
 .available-list {
   display: grid;
-  grid-template-columns: repeat(1fr);
+  grid-template-columns: 1fr;
   gap: 14px 24px;
 }
 
@@ -207,28 +207,203 @@ textarea {
   border-top: 1px solid #e5e7eb;
   font-size: 15px;
   line-height: 1.7;
+}
 
-  h4 {
-    margin-bottom: 10px;
-    color: #1f2937;
+.contact-note h4 {
+  margin-bottom: 10px;
+  color: #1f2937;
+}
+
+.contact-note p {
+  color: #6b7280;
+  line-height: 1.6;
+}
+
+/* ===================================
+   TABLET
+=================================== */
+
+@media (max-width: 992px) {
+  .contact {
+    padding: 80px 0;
   }
 
-  p {
-    color: #6b7280;
-    line-height: 1.6;
+  .section-header {
+    margin-bottom: 50px;
+  }
+
+  .section-title {
+    font-size: 2.3rem;
+  }
+
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .contact-info {
+    order: 2;
+  }
+
+  .contact-form {
+    order: 1;
   }
 }
 
+/* ===================================
+   MOBILE
+=================================== */
+
 @media (max-width: 768px) {
+  .contact {
+    padding: 70px 0;
+  }
+
+  .section-header {
+    margin-bottom: 40px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section-description {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
+
   .contact-wrapper {
-    grid-template-columns: 1fr;
+    gap: 30px;
   }
 
   .input-group {
     grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .contact-form {
+    padding: 24px;
+  }
+
+  .info-card {
+    padding: 18px;
+    gap: 16px;
+  }
+
+  .info-card i {
+    width: 48px;
+    height: 48px;
+    font-size: 18px;
+  }
+
+  .info-card h4 {
+    font-size: 1rem;
+  }
+
+  .info-card a,
+  .info-card p {
+    font-size: 0.9rem;
+    word-break: break-word;
+  }
+
+  .available-card h4 {
+    font-size: 1.3rem;
+  }
+
+  input,
+  textarea {
+    padding: 14px;
+    font-size: 0.95rem;
+  }
+
+  .btn-primary {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .social-links {
+    justify-content: center;
+  }
+}
+
+/* ===================================
+   SMALL MOBILE
+=================================== */
+
+@media (max-width: 480px) {
+  .contact {
+    padding: 60px 0;
   }
 
   .section-title {
-    font-size: 32px;
+    font-size: 1.9rem;
+  }
+
+  .section-description {
+    font-size: 0.9rem;
+  }
+
+  .contact-form {
+    padding: 20px;
+    border-radius: 16px;
+  }
+
+  .info-card {
+    padding: 16px;
+    border-radius: 14px;
+  }
+
+  .info-card i {
+    width: 42px;
+    height: 42px;
+    font-size: 16px;
+  }
+
+  .available-card h4 {
+    font-size: 1.15rem;
+    margin-bottom: 12px;
+  }
+
+  .available-list p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  input,
+  textarea {
+    padding: 12px;
+    font-size: 0.9rem;
+  }
+
+  textarea {
+    min-height: 120px;
+  }
+
+  .btn-primary {
+    padding: 14px;
+    font-size: 0.95rem;
+  }
+
+  .social-links {
+    gap: 12px;
+  }
+
+  .social-links a {
+    width: 42px;
+    height: 42px;
+    font-size: 18px;
+  }
+
+  .contact-note {
+    margin-top: 24px;
+    padding-top: 20px;
+  }
+
+  .contact-note h4 {
+    font-size: 1.1rem;
+  }
+
+  .contact-note p {
+    font-size: 0.9rem;
   }
 }

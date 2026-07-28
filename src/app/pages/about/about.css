@@ -1,12 +1,6 @@
 .about {
-  padding: 20px 0 120px;
+  padding: 80px 0;
   background: #0f172a;
-}
-
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
 .about .container {
@@ -187,4 +181,147 @@
 }
 .strength-card:hover .strength-icon {
   transform: scale(1.15);
+}
+@media (max-width: 992px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .about-info {
+    width: 100%;
+  }
+
+  .about-info p {
+    max-width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .section-header {
+    margin-bottom: 40px;
+  }
+
+  .section-title {
+    font-size: 2.3rem;
+  }
+
+  .journey-title {
+    font-size: 2rem;
+  }
+
+  .timeline-item {
+    gap: 20px;
+  }
+
+  .strengths {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .about {
+    padding: 60px 0;
+  }
+
+  .section-header {
+    margin-bottom: 32px;
+  }
+  .timeline-content {
+    padding: 16px;
+  }
+
+  .timeline-content h4 {
+    font-size: 20px;
+  }
+
+  .section-subtitle {
+    font-size: 12px;
+    letter-spacing: 3px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .about-content {
+    gap: 40px;
+  }
+
+  .journey {
+    gap: 20px;
+  }
+
+  .journey-title {
+    font-size: 1.75rem;
+    margin-bottom: 20px;
+  }
+
+  .timeline {
+    gap: 28px;
+  }
+
+  .timeline-item {
+    gap: 14px;
+  }
+
+  .timeline-dot {
+    width: 14px;
+    height: 14px;
+    border-width: 3px;
+  }
+
+  .timeline::before {
+    left: 6px;
+  }
+
+  .timeline-content {
+    padding: 18px;
+  }
+
+  .timeline-year {
+    font-size: 0.85rem;
+  }
+
+  .timeline-content h4 {
+    font-size: 1.2rem;
+  }
+
+  .timeline-content p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .about-info h3 {
+    font-size: 1.75rem;
+    margin-bottom: 18px;
+  }
+
+  .about-info p {
+    font-size: 0.95rem;
+    line-height: 1.8;
+  }
+
+  .strengths {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-top: 28px;
+  }
+
+  .strength-card {
+    padding: 18px;
+  }
+
+  .strength-icon {
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+  }
+
+  .strength-card h4 {
+    font-size: 1.2rem;
+  }
+
+  .strength-card p {
+    font-size: 0.9rem;
+  }
 }

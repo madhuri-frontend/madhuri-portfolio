@@ -1,21 +1,34 @@
-<nav class="navbar">
-  <div class="container">
-    <!--Logo-->
+<nav class="navbar" [class.scrolled]="isScrolled">
+  <div class="navbar-content">
+    <!-- Logo -->
     <div class="logo">Etikala Madhuri</div>
 
-    <!--Navigation Menu-->
-    <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
+    <!-- Hamburger -->
+    <div class="menu-toggle" (click)="toggleMenu()">
+      <i class="fas" [class.fa-bars]="!isMenuOpen" [class.fa-times]="isMenuOpen"></i>
+    </div>
+
+    <!-- Navigation -->
+    <ul class="nav-links" [class.active]="isMenuOpen">
+      <li><a href="#home" (click)="closeMenu()">Home</a></li>
+      <li><a href="#about" (click)="closeMenu()">About</a></li>
+      <li><a href="#experience" (click)="closeMenu()">Experience</a></li>
+      <li><a href="#skills" (click)="closeMenu()">Skills</a></li>
+      <li><a href="#projects" (click)="closeMenu()">Projects</a></li>
+      <li><a href="#contact" (click)="closeMenu()">Contact</a></li>
+
+      <li class="mobile-resume">
+        <a href="/resume/Etikala_Madhuri_Frontend_Developer.pdf" target="_blank" rel="noopener">
+          Resume
+        </a>
+      </li>
     </ul>
 
-    <!--Resume Button-->
+    <!-- Desktop Resume -->
     <div class="nav-actions">
-      <a href="">Resume</a>
+      <a href="/resume/Etikala_Madhuri_Frontend_Developer.pdf" target="_blank" rel="noopener">
+        Resume
+      </a>
     </div>
   </div>
 </nav>
